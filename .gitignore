@@ -1,2 +1,26 @@
 .idea
 .vscode
+/Legacy_React
+
+##########    react-task-tracker   ##########
+# dependencies
+/React/react-task-tracker/node_modules
+/React/react-task-tracker/.pnp
+/React/react-task-tracker/.pnp.js
+
+# testing
+/React/react-task-tracker/coverage
+
+# production
+/React/react-task-tracker/build
+
+# misc
+/React/react-task-tracker/.DS_Store
+/React/react-task-tracker/.env.local
+/React/react-task-tracker/.env.development.local
+/React/react-task-tracker/.env.test.local
+/React/react-task-tracker/.env.production.local
+
+/React/react-task-tracker/npm-debug.log*
+/React/react-task-tracker/yarn-debug.log*
+/React/react-task-tracker/yarn-error.log*
