@@ -13,11 +13,10 @@
       "reminder": true
     },
     {
-      "id": 3,
-      "text": "task 3",
-      "day": "Feb 7th",
-      "reminder": false
+      "text": "test",
+      "day": "tests",
+      "reminder": false,
+      "id": 3
     }
   ]
-
 }
