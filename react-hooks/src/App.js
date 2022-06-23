@@ -9,11 +9,13 @@ function App() {
   const doubleNumber = useMemo( () => {
     return slowFunction(number) 
   }, [number])
-  
-  const themeStyle = {
+
+  const themeStyle = useMemo(() =>  {
+    return {
     backgroundColor: dark ? 'black' : 'white',
     color: dark? 'white' : 'black'
-  }
+    }
+  }, [dark])
 
   const handleResize = () => {
     setWindowWidth(window.innerWidth)
@@ -27,6 +29,10 @@ function App() {
       window.removeEventListener('resize', handleResize)
     }
   }, [])
+
+  useEffect( () => {
+    console.log("change theme")
+  }, [themeStyle])
 
   return (
     <div>
