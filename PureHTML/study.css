@@ -26,12 +26,21 @@ a {
 }
 .item {
     padding: 10px;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to top, #ccc 50%, #222 50%);
+    -webkit-transition: background-position 0.2s;
+    -moz-transition: background-position 0.2s;
+    transition: background-position 0.2s;
+}
+
+.item:hover {
+    background-position: 0 100%;
 }
 
 .item a:hover,
 .item a:hover::after {
-    background-color: #ccc;
-    border-radius: 10px;
+    /* background-color: #ccc;
+    border-radius: 10px; */
     color: black;
 }
 
