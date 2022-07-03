@@ -37,8 +37,7 @@ a {
     background-position: 0 100%;
 }
 
-.item a:hover,
-.item a:hover::after {
+.item a:hover {
     /* background-color: #ccc;
     border-radius: 10px; */
     color: black;

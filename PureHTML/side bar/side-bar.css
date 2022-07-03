@@ -1,0 +1,63 @@
+/* General Rules */
+* {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+
+/* General Layout */
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 30%;
+    height: 100vh;
+    background-color: #f1f1f1;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px 16px;
+}
+
+.content {
+    width: 70%;
+    height: 100vh;
+    background-color: bisque;
+    padding: 10px 16px;
+}
+
+
+
+/* Detailed Rules */
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
