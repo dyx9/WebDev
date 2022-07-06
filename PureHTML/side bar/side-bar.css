@@ -8,6 +8,10 @@
     list-style-type: none;
 }
 
+.mobile-nav-bar {
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -38,6 +42,7 @@ a:visited {
     height: 100vh;
     background-color: bisque;
     padding: 10px 16px;
+    overflow: auto;
 }
 
 
@@ -77,7 +82,7 @@ a:visited {
     display: block;
     padding: 16px;
     background-color: lightcyan;
-    padding: 16px;
+    padding: 48px 32px;
     margin: 2px;;
 }
 
@@ -85,4 +90,41 @@ a:visited {
     font-size: x-large;
 }
 
+.content li p, .content li a {
+    padding: 8px;
+}
 
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 768px) {
+
+    .sidebar, .sidebar > .menu > .logo{
+        display: none;
+    }
+
+    .sidebar.active {
+        display: flex;
+
+        float: left;
+        top: 50px;
+    }
+
+    .content {
+        width: 100%;
+        top: 50px;
+    }
+
+    .mobile-nav-bar {
+        display: flex;
+        align-items: center;
+        background-color: #f1f1f1;
+        position: fixed;
+        padding: 10px 20px;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        z-index: 999;
+    }
+
+
+  }
