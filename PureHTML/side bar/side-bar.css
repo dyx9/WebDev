@@ -98,33 +98,46 @@ a:visited {
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 768px) {
 
+
+    .mobile-header {
+        background-color: #f1f1f1;
+        position: relative;
+        top: 0;
+        max-height: 50px;
+        padding: 10px 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 999;
+    }
+
+    .content {
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        max-height: calc(100vh - 50px);
+    }
+
+    .sidebar.active {
+        top: 50px;
+        display: flex;
+        position: absolute;
+        float: left;
+        width: 40%;
+        z-index: 998;
+        max-height: calc(100vh - 50px);
+    }
+
     .sidebar, .sidebar > .menu > .logo{
         display: none;
     }
 
-    .sidebar.active {
-        display: flex;
 
-        float: left;
-        top: 50px;
-    }
 
-    .content {
-        width: 100%;
-        top: 50px;
-    }
 
-    .mobile-nav-bar {
-        display: flex;
-        align-items: center;
-        background-color: #f1f1f1;
-        position: fixed;
-        padding: 10px 20px;
-        top: 0;
-        width: 100%;
-        justify-content: space-between;
-        z-index: 999;
-    }
+
+
 
 
   }
