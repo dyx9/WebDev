@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <nav>
         <ul className="menu" ref={menuRef}>
-            <li className="logo"><a href="#">Creative Mind Agency</a></li>
+            <li className="logo"><a href="#">Yixuan's Website</a></li>
             <li className="item"><a href="#">Home</a></li>
             <li className="item"><a href="#">About</a></li>
             <li className="item"><a href="#">Blog</a></li>
