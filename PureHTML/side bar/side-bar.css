@@ -78,7 +78,7 @@ a:visited {
 
 /* Detailed Rules for Main Content */
 
-.content li {
+.content .blog li {
     display: block;
     padding: 16px;
     background-color: lightcyan;
@@ -86,11 +86,11 @@ a:visited {
     margin: 2px;;
 }
 
-.content a {
+.content .blog a {
     font-size: x-large;
 }
 
-.content li p, .content li a {
+.content .blog li p, .content .blog li a {
     padding: 8px;
 }
 
@@ -98,46 +98,54 @@ a:visited {
 /* Responsive Design for Mobile */
 @media only screen and (max-width: 768px) {
 
+    :root {
+        --sidebar-width: 40%;
+    }
 
     .mobile-header {
         background-color: #f1f1f1;
-        position: relative;
+        position: sticky;
         top: 0;
         max-height: 50px;
         padding: 10px 20px;
-        width: 100%;
+        width: auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         z-index: 999;
+        
+    }
+
+    .sidebar {
+        position: fixed;
+        overflow-x: hidden;
+        width: 0;
+        transition: .5s;
     }
 
     .content {
-        position: absolute;
+        padding: 0;
         width: 100%;
-        top: 50px;
-        max-height: calc(100vh - 50px);
+        transition: .5s;
+    }
+
+    .blog {
+        padding: 10px 16px;;
     }
 
     .sidebar.active {
-        top: 50px;
         display: flex;
-        position: absolute;
-        float: left;
-        width: 40%;
-        z-index: 998;
-        max-height: calc(100vh - 50px);
+        width: var(--sidebar-width);
+        transition: 0.5s;
     }
 
-    .sidebar, .sidebar > .menu > .logo{
+    .content.push {
+        margin-left: var(--sidebar-width);
+    }
+
+    .sidebar > .menu > .logo{
         display: none;
     }
-
-
-
-
-
-
 
 
   }
