@@ -1,37 +1,38 @@
 import * as React from 'react'
+import MobileNavbar from '../MobileNavbar/MoblieNavbar'
 
-
-const Blog = () => {
+const Blog = ({onToggle, openSidebar, contentRef}) => {
 
   return (
     <>
-        <div class="content">
-            <ul class="blog">
-                <li class="blog-block">
+        <div className="content" ref={contentRef}>
+            <MobileNavbar onToggle={onToggle} openSidebar={openSidebar}/>
+            <ul className="blog">
+                <li className="blog-block">
                     <a href="#">blog title</a>
                     <p>content placeholder.........</p>
                     <p>content placeholder.........</p>
                 </li>
         
-                <li class="blog-block">
+                <li className="blog-block">
                     <a href="#">blog title</a>
                     <p>content placeholder.........</p>
                     <p>content placeholder.........</p>
                 </li>
         
-                <li class="blog-block">
+                <li className="blog-block">
                     <a href="#">blog title</a>
                     <p>content placeholder.........</p>
                     <p>content placeholder.........</p>
                 </li>
         
-                <li class="blog-block">
+                <li className="blog-block">
                     <a href="#">blog title</a>
                     <p>content placeholder.........</p>
                     <p>content placeholder.........</p>
                 </li>
         
-                <li class="blog-block">
+                <li className="blog-block">
                     <a href="#">blog title</a>
                     <p>content placeholder.........</p>
                     <p>content placeholder.........</p>
