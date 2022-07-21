@@ -144,7 +144,7 @@ a:visited {
 
     .cover.active {
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
         height: 100%;
         background-color: rgba(42, 42, 42, 0.5);
