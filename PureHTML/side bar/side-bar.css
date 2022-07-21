@@ -93,14 +93,21 @@ a:visited {
     border-bottom: 1px solid hsla(0,0%,50%,.12);
 }
 
+/* blog content container */
+.blog-block .non-image-part {
+    position: relative;
+    width: 70%;
+}
+
 /* blog title */
 .blog-block .non-image-part a {
     font-size: 32px;
 }
 
-/* blog content container */
-.blog-block .non-image-part {
-    width: 70%;
+/* blog time */
+.blog-block .non-image-part .time {
+    position: absolute;
+    bottom: 0;
 }
 
 /* blog image container */
@@ -184,6 +191,11 @@ a:visited {
         width: 100%;
         order: 2;
         padding: 15px 20px;
+    }
+
+    /* blog time */
+    .blog-block .non-image-part .time {
+        position: unset;
     }
 
     /* blog image container */
