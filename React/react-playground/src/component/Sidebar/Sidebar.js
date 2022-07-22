@@ -24,14 +24,14 @@ const Sidebar = ({sidebarRef}) => {
             </ul>
 
             <ul className="interactive-area-1">
-                <li className="item"><a href="#">interactive-area-1</a></li>
-                <li className="item"><a href="#">interactive-area-1</a></li>
-                <li className="item"><a href="#">interactive-area-1</a></li>
+                <li className="item"><a href="#">interactive</a></li>
+                <li className="item"><a href="#">interactive</a></li>
+                <li className="item"><a href="#">interactive</a></li>
             </ul>
 
             <ul className="side-bar-footer">
-                <li className="item"><a href="#">footer content line 1</a></li>
-                <li className="item"><a href="#">footer content line 2</a></li>
+                <li className="item"><a href="#">footer</a></li>
+                <li className="item"><a href="#">footer</a></li>
             </ul>
         </div>
   </>

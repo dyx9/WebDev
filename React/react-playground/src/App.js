@@ -1,11 +1,14 @@
 import './App.css';
 import Sidebar from './component/Sidebar/Sidebar';
+import Cover from './component/Cover/Cover';
 import Blog from './component/Blog/Blog';
 import { useRef, useState, } from 'react';
+
 
 function App() {
   const sidebarRef = useRef(null)
   const contentRef = useRef(null)
+  const coverRef = useRef(null)
   const [openSidebar, setOpenSidebar] = useState(false)
 
   const onToggle = () => {
@@ -17,17 +20,24 @@ const updateClassName = () => {
   if (sidebarRef.current.className == "sidebar") {
       sidebarRef.current.className = 'sidebar active'
       contentRef.current.className = 'content push'
+      coverRef.current.className = 'cover active'
   }
   else{
       sidebarRef.current.className = 'sidebar'
       contentRef.current.className = 'content'
+      coverRef.current.className = 'cover'
   }
 }
 
   return (
     <div className='container'>
+      <Cover coverRef={coverRef} />
       <Sidebar sidebarRef={sidebarRef}/>
-      <Blog onToggle={onToggle} openSidebar={openSidebar} contentRef={contentRef}/>
+      <Blog 
+        onToggle={onToggle}
+        openSidebar={openSidebar}
+        contentRef={contentRef}
+      />
     </div>
   );
 }
