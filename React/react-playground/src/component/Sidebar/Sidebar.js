@@ -1,10 +1,12 @@
 import * as React from 'react'
+import MobileNavbar from '../MobileNavbar/MoblieNavbar'
 
-const Sidebar = ({sidebarRef}) => {
+const Sidebar = ({onToggle, openSidebar, sidebarRef}) => {
 
   return (
     <>
         <div className='sidebar' ref={sidebarRef}>
+            <MobileNavbar onToggle={onToggle} openSidebar={openSidebar}/>
             <ul className='menu'>
                 <li className='logo'>
                     <a href="/">Yixuan's Website</a>

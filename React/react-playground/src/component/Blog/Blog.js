@@ -1,13 +1,11 @@
 import * as React from 'react'
-import MobileNavbar from '../MobileNavbar/MoblieNavbar'
 import blogImg from '../../Safari.jpeg'
 
-const Blog = ({onToggle, openSidebar, contentRef}) => {
+const Blog = ({contentRef}) => {
 
   return (
     <>
         <div className="content" ref={contentRef}>
-            <MobileNavbar onToggle={onToggle} openSidebar={openSidebar}/>
 
             <ul className="blog">
                 <li className="blog-block">

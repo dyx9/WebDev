@@ -32,11 +32,12 @@ const updateClassName = () => {
   return (
     <div className='container'>
       <Cover coverRef={coverRef} />
-      <Sidebar sidebarRef={sidebarRef}/>
-      <Blog 
+      <Sidebar
         onToggle={onToggle}
         openSidebar={openSidebar}
-        contentRef={contentRef}
+        sidebarRef={sidebarRef}
+      />
+      <Blog contentRef={contentRef}
       />
     </div>
   );
