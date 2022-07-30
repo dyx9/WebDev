@@ -36,7 +36,7 @@ const Sidebar = ({onToggle, openSidebar, sidebarRef}) => {
                 <li className="item"><a href="#">footer</a></li>
             </ul>
         </div>
-  </>
+    </>
 
   )
 }

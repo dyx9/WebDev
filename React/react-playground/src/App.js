@@ -12,22 +12,22 @@ function App() {
   const [openSidebar, setOpenSidebar] = useState(false)
 
   const onToggle = () => {
-      setOpenSidebar(pre => !pre)
-      updateClassName()
-}
+    setOpenSidebar(pre => !pre)
+    updateClassName()
+  }
 
-const updateClassName = () => {
-  if (sidebarRef.current.className == "sidebar") {
+  const updateClassName = () => {
+    if (sidebarRef.current.className == "sidebar") {
       sidebarRef.current.className = 'sidebar active'
       contentRef.current.className = 'content push'
       coverRef.current.className = 'cover active'
-  }
-  else{
+    }
+    else{
       sidebarRef.current.className = 'sidebar'
       contentRef.current.className = 'content'
       coverRef.current.className = 'cover'
+    }
   }
-}
 
   return (
     <div className='container'>
